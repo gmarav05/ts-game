@@ -58,7 +58,7 @@ https://github.com/user-attachments/assets/70e19ebd-92bc-4439-b423-c4c75c9b19a6
 
 ## Learnings
 
-- Practiced
+- Practiced Typescript fundamentals.
 
 - Learned how to use React with Typescript Hooks like `useState`.
 
