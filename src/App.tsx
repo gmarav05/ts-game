@@ -8,7 +8,7 @@ import GameStatus from "./components/GameStatus";
 import LanguageChips from "./components/LanguageChips";
 import WordLetters from "./components/WordLetters";
 import AriaLiveStatus from "./components/AriaLiveStatus";
-import Keyboard from "./components/Keyboard";
+import Keyboard from "./components/KeyBoard";
 import NewGameButton from "./components/NewGameButton";
 
 export default function AssemblyEndgame() {
@@ -26,7 +26,9 @@ export default function AssemblyEndgame() {
     const isGameLost:boolean = wrongGuessCount >= numGuessesLeft
     const isGameOver:boolean = isGameWon || isGameLost
     const lastGuessedLetter:string = guessedLetters[guessedLetters.length - 1]
-    const isLastGuessIncorrect:boolean = lastGuessedLetter && !currentWord.includes(lastGuessedLetter)
+    const isLastGuessIncorrect: boolean =
+    !!lastGuessedLetter && !currentWord.includes(lastGuessedLetter)
+
 
     // Static values
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
