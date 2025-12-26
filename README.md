@@ -58,7 +58,13 @@ https://github.com/user-attachments/assets/70e19ebd-92bc-4439-b423-c4c75c9b19a6
 
 ## Learnings
 
-- Learned how to use React JS Hooks like `useState`.
+- Practiced
+
+- Learned how to use React with Typescript Hooks like `useState`.
+
+- Practiced props and prop typing.
+
+- Learned State Management with TypeScript.
 
 - Practiced building Component-based architecture.
 
