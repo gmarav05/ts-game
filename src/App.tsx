@@ -11,6 +11,7 @@ export default function AssemblyEndgame() {
     const [guessedLetters, setGuessedLetters] = useState<string[]>([])
 
 
+    // Derived values
     const numGuessesLeft:number = languages.length - 1
     const wrongGuessCount:number = guessedLetters.filter((letter:string):boolean => !currentWord.includes(letter)).length
     const isGameWon:boolean = currentWord.split("").every((letter:string):boolean => guessedLetters.includes(letter))
@@ -22,15 +23,18 @@ export default function AssemblyEndgame() {
     // Static values
     const alphabet = "abcdefghijklmnopqrstuvwxyz"
 
-    function addGuessedLetter(letter) {
-        setGuessedLetters(prevLetters =>
+    function addGuessedLetter(letter:string):void {
+        setGuessedLetters((prevLetters:string[]):string[] =>
             prevLetters.includes(letter) ?
                 prevLetters :
                 [...prevLetters, letter]
         )
     }
 
-    function startNewGame() {
+    /*
+    CHALLENGE: Fully type the startNewGame() function
+    */
+    function startNewGame():void {
         setCurrentWord(getRandomWord())
         setGuessedLetters([])
     }
